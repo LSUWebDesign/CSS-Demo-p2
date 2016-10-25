@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Layout Basics</title>
+		<link href="assets/css/reset.css" rel="stylesheet" />
+		<link href="assets/css/styles.css" rel="stylesheet" media="screen" />
+	</head>
+	<body>
+		<div class="pageWrapper">
+			<header>
+				<h1>CSS Layout Basics</h1>
+			</header><!--header-->
+			<nav class="mainNav">
+				<ul>
+					<li><a href="#">Nav Link 1</a></li>
+					<li><a href="#">Nav Link 2</a></li>
+					<li><a href="#">Nav Link 3</a></li>
+					<li><a href="#">Nav Link 4</a></li>
+					<li><a href="#">Nav Link 5</a></li>
+				</ul>
+			</nav><!--nav-->
+			<a href="#" id="nav-toggle">MENU</a>
+			<div class="contentArea">
+				
+				<main>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+<img src="assets/images/homer-simpson.jpg" class="image-right" alt="Homer Simpson">
+<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>
+
+<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>
+
+<p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental: in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+<p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum. Non sequitur condominium facile et geranium incognito. Epsum factorial non deposit quid pro quo hic escorol. Marquee selectus non provisio incongruous feline nolo contendre Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum.</p>
+
+<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilita; de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>
+				</main><!--mainColumn-->
+
+<aside>
+					<nav class="subNav">
+						<ul>
+							<li><a href="#">SubNav Link 1</a></li>
+							<li><a href="#">SubNav Link 2</a></li>
+							<li><a href="#">SubNav Link 3</a></li>
+							<li><a href="#">SubNav Link 4</a></li>
+							<li><a href="#">SubNav Link 5</a></li>
+						</ul>
+					</nav>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</aside>
+
+
+			</div><!--contentArea -->
+			<footer>
+				&copy;2016 Art 4567.
+			</footer><!--footer-->
+		</div><!--pageWrapper-->
+
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script>
+		$( document ).ready(function() {
+ 
+		   $( "#nav-toggle" ).click(function() {
+			  $('nav.mainNav').toggleClass('active'); 
+			  $('nav.mainNav').slideToggle(275); 
+			});
+
+		  // $("#nav-toggle").click(function(){
+		  // 	console.log("clicked");
+		  // });
+
+		  // $( "#nav-toggle" ).click(function() {
+		  //   alert( "Handler for .click() called." );
+		  // });
+		 
+		});
+	</script>
+
+	</body>
+</html>
